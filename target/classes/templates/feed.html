@@ -13,5 +13,18 @@
     <img th:if="${post.picture}" th:src="${post.picture}"/>
     <hr/>
 </div>
+
+<form action="/connect/facebook" method="POST">
+<div class="formInfo">
+    <p>
+        Spring Social Showcase is connected to your Twitter account.
+        Click the button if you wish to disconnect.
+    </p>
+</div>
+<button type="submit">Disconnect</button>
+<input type="hidden" name="_method" value="delete" />
+</form>
+
+
 </body>
 </html>
